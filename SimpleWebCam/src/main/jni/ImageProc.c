@@ -47,7 +47,7 @@ int opendevice(int i)
 
 	sprintf(system_call_buffer,"su -c \"chmod 666 %s\"",dev_name);
 
-	int ret = system(system_call_buffer);
+	int ret = 0;//system(system_call_buffer);
 
 	if (ret !=0) {
 		LOGE("Could not %s : %d, %s",system_call_buffer, errno, strerror (errno));
