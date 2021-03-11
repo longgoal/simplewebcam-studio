@@ -32,6 +32,11 @@ Supported platform : Iconia Tab A500.
 # Compiling/Installing
 	$ cd <project-location>
 	$ <path-to-ndk>/ndk-build NDK_PROJECT_PATH=.
+	$ 进入jni目录
+	$ cd D:\code\simplewebcam-studio\SimpleWebCam\src\main\jni>
+	$ 指定ndk-build绝对路径，指定Application.mk Android.mk
+	$ D:\Android\Sdk\ndk-bundle\ndk-build NDK_PROJECT_PATH=. NDK_APPLICATION_MK=Application.mk APP_BUILD_SCRIPT=Android.mk
+
 
 Then compile/run on android studio. Android studio will not compile the NDK stuff, [StackOverflow](http://stackoverflow.com/questions/27453085/execution-failed-for-task-appcompiledebugndk-failed-to-run-this-command-ndk) says to disable this by adding:
 
